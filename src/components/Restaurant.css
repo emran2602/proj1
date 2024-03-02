@@ -1,0 +1,70 @@
+
+.restaurant {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    width: 300px; /* Adjust based on your layout */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: inline-block; /* or flex, depending on your layout */
+    position: relative;
+    transition: filter 0.3s ease; /* Smooth transition effect */
+}
+.restaurant:hover{
+    filter: brightness(80%); /* Darken the restaurant on hover */
+    transform: translateY(-5px); /* Move the card up slightly on hover */
+
+}
+
+.restaurant-image {
+    width: 100%;
+    height: 200px; /* Adjust based on your preference */
+    object-fit: cover; /* This makes sure the image covers the area nicely */
+    border-bottom: 1px solid #eee;
+}
+.restaurant-caption {
+    margin-top: 5px; /* Adjust spacing between title and caption */
+    color: #777; /* Adjust text color to a muted tone */
+    font-size: 0.9em; /* Adjust font size to be slightly smaller */
+    line-height: 1.2; /* Increase line height for better readability */
+}
+
+.restaurant-info {
+    padding: 16px;
+}
+
+.restaurant-title {
+    margin: 0;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.25em;
+}
+
+.restaurant-location {
+    margin: 0;
+    color: #666;
+    font-size: 1em;
+}
+.restaurant-button {
+    display: inline-block;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.restaurant-button:hover,
+.restaurant-button:focus {
+    background-color: #0056b3; /* Darken the button a bit on hover/focus */
+    color: white;
+    text-decoration: none;
+}
